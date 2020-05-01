@@ -1,17 +1,16 @@
-#ifndef CIRCULAR_BUFFER_LOGGER_H_
-#define CIRCULAR_BUFFER_LOGGER_H_
-
+#pragma once
 #include "external/arduino-logger/src/ArduinoLogger.h"
 #include "external/arduino-logger/src/internal/ring_span.hpp"
 
 static uint32_t _timeAtLoopStart;
+
 
 /**
  * @brief based on the circular log buffer plugin with some small added features like time management from start isntant
  * 
  * @tparam (1 * 1024) 
  */
-template<size_t TBufferSize = (1 * 1024)>
+template <size_t TBufferSize = (1 * 1024)>
 class SanBufferLogger final : public LoggerBase
 {
   public:
@@ -73,7 +72,7 @@ class SanBufferLogger final : public LoggerBase
 	 */
 	static void SetLogTimeStart()
 	{
-		_timeAtLoopStart = millis();
+		_timeAtLoopStart =millis();
 	}
 	
 
@@ -89,4 +88,3 @@ class SanBufferLogger final : public LoggerBase
 	stdext::ring_span<char> log_buffer_{buffer_, buffer_ + TBufferSize};
 };
 
-#endif // CIRCULAR_BUFFER_LOGGER_H_

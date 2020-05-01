@@ -1,6 +1,6 @@
 #pragma once
 #if LOG_EN_DEFAULT == true
-#include <SanBufferLogger.h>
+#include <src/SanBufferLogger.h>
 using PlatformLogger = PlatformLogger_t<SanBufferLogger<1024>>;
 #define ticktime() nstest::SetLogTimeStart();
 
