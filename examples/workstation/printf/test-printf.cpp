@@ -4,7 +4,7 @@
 // #include <stdio.h>
 // #include <stdlib.h>
 // #include <iostream>
-#include <SanLogger.h>
+#include <SanArduinoLogger.h>
 
 using namespace arduino_mock;
 

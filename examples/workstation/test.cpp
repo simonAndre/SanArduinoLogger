@@ -1,5 +1,5 @@
 #define LOG_EN_DEFAULT true
-#include <SanLogger.h>
+#include <SanArduinoLogger.h>
 using namespace arduino_mock;
 
 #include "platform_logger.h"
