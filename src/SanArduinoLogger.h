@@ -1,6 +1,6 @@
 #pragma once
 #if defined(ARDUINO) /* Arduino*/
-#include "external/arduino-printf/src/LibPrintf.h"
+#include <LibPrintf.h>
 #else               /* not Arduino*/
 #include "arduinoMock/arduino_mock.hpp"
 #endif              /* Arduino*/
