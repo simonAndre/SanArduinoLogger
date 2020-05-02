@@ -17,8 +17,8 @@ MIT Licence
 namespace arduino_mock
 {
 // use functions in a namespace to avoid stdio conflicts
-#include "../external/arduino-printf/src/printf.h"
-// #include "../external/arduino-printf/src/printf.c"
+#include "printf.h"
+#include "printf.c"
 
 /**
  * @brief implementation provided for printf lib
