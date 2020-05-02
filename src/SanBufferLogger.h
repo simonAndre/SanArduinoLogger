@@ -1,6 +1,6 @@
 #pragma once
-#include "external/arduino-logger/src/ArduinoLogger.h"
-#include "external/arduino-logger/src/internal/ring_span.hpp"
+#include <ArduinoLogger.h>
+#include "external/ring_span.hpp"
 
 static uint32_t _timeAtLoopStart;
 

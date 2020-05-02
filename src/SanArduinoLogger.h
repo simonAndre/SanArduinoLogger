@@ -5,5 +5,5 @@
 #include "arduinoMock/arduino_mock.hpp"
 #endif              /* Arduino*/
 
-#include "external/arduino-logger/src/ArduinoLogger.h"
+#include <ArduinoLogger.h>
 

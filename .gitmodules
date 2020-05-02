@@ -1,3 +1,0 @@
-[submodule "src/external/arduino-logger"]
-	path = src/external/arduino-logger
-	url = https://github.com/embeddedartistry/arduino-logger.git
